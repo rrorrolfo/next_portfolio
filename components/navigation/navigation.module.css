@@ -1,0 +1,45 @@
+.navigationContainer a {
+  color: rgb(0, 0, 0);
+}
+
+@media (min-width: 600px) {
+  .navigationContainer a {
+    padding: 0 !important;
+  }
+}
+
+.navigationContainer {
+  display: flex;
+  height: 78px;
+  padding: 20px 0 0;
+  margin-bottom: 20px !important;
+}
+
+.logoContainer {
+  position: relative;
+}
+
+.mainNavContainer {
+  display: none;
+}
+
+.menu {
+  height: 50px;
+  position: relative;
+}
+
+.mainNavLink {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.mainNavLink:hover {
+  color: rgb(255, 109, 0) !important;
+}
+
+@media (min-width: 960px) {
+  .mainNavContainer {
+    display: block;
+  }
+}
