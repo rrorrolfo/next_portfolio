@@ -9,10 +9,10 @@
 }
 
 .navigationContainer {
-  display: flex;
   height: 78px;
   padding: 20px 0 0;
   margin-bottom: 20px !important;
+  justify-content: space-around;
 }
 
 .logoContainer {
