@@ -110,7 +110,7 @@ export const CloseButton = ({
             display: ${showMenu ? "initial" : "none"};
           }
 
-          @media (min-width: 960px) {
+          @media (min-width: 900px) {
             div {
               color: rgb(255, 145, 77);
               border: 2px solid rgb(255, 145, 77);

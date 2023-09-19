@@ -58,7 +58,7 @@ const PagesList = ({ showMenu, breakpoints }: Props) => {
             background-color: rgba(0, 0, 0, 0.04);
           }
 
-          @media (min-width: 960px) {
+          @media (min-width: 900px) {
             a {
               display: none;
               padding-left: 20px;

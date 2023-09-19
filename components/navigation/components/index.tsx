@@ -13,9 +13,9 @@ const DropdownMenu = () => {
   // Screen breakpoints
   const isSX = useMediaQuery("(min-width:0px)");
   const isSM = useMediaQuery("(min-width:600px)");
-  const isMD = useMediaQuery("(min-width:960px)");
-  const isLG = useMediaQuery("(min-width:1280px)");
-  const isXL = useMediaQuery("(min-width:1980px)");
+  const isMD = useMediaQuery("(min-width:900px)");
+  const isLG = useMediaQuery("(min-width:1200px)");
+  const isXL = useMediaQuery("(min-width:1536px)");
 
   const breakpoints: Breakpoints = {
     isSX,
@@ -50,7 +50,7 @@ const DropdownMenu = () => {
             border-radius: 4px;
           }
 
-          @media (min-width: 960px) {
+          @media (min-width: 900px) {
             div {
               position: absolute;
               right: 0;

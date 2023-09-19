@@ -38,7 +38,7 @@
   color: rgb(255, 109, 0) !important;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 900px) {
   .mainNavContainer {
     display: block;
   }
