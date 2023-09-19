@@ -37,6 +37,6 @@ a {
 
 .mainContainer {
   background-color: #444;
-  height: 100vh;
+  height: calc(100vh - 98px);
   z-index: 10;
 }
