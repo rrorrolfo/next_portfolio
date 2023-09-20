@@ -45,3 +45,29 @@
   right: 0;
   z-index: -1001;
 }
+
+@media (min-width: 600px) {
+  .logoContainer {
+    right: 5%;
+  }
+}
+
+@media (min-width: 900px) {
+  .description h1 {
+    font-size: 3rem;
+  }
+
+  .logoContainer {
+    right: 20%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .description {
+    margin-left: 75px;
+  }
+
+  .logoContainer {
+    right: 25%;
+  }
+}

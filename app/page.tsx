@@ -8,7 +8,7 @@ import styles from "./page.module.css";
 const Home = () => {
   return (
     <Grid container className={styles.description}>
-      <Grid xs={10}>
+      <Grid xs={10} md={7}>
         <Typography variant="h1" gutterBottom>
           Hi!, <br />
           I´m Rodolfo,
@@ -18,7 +18,7 @@ const Home = () => {
           React.js / Next.js / Material UI / Node.js
         </Typography>
       </Grid>
-      <Grid xs={10}>
+      <Grid xs={10} md={7}>
         <a href="/work" title="Check my work.">
           MY WORK
         </a>
