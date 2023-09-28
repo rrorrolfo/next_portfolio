@@ -10,7 +10,6 @@ export const OverlayMenu = ({ toggleMenu, showMenu }: Props) => {
   return (
     <>
       <div
-        className="overlay-menu"
         onClick={() => {
           toggleMenu(!showMenu);
         }}
@@ -30,7 +29,15 @@ export const OverlayMenu = ({ toggleMenu, showMenu }: Props) => {
 
 export const MenuButton = ({ showMenu }: { showMenu: boolean }) => {
   return (
-    <button>
+    <button
+      style={{
+        cursor: "pointer",
+        height: "50px",
+        width: "50px",
+        backgroundColor: "rgb(0, 0, 0)",
+        border: "none",
+      }}
+    >
       {!showMenu ? (
         <MenuRoundedIcon
           style={{
@@ -43,14 +50,6 @@ export const MenuButton = ({ showMenu }: { showMenu: boolean }) => {
       ) : null}
       <style jsx>
         {`
-          button {
-            cursor: pointer;
-            height: 50px;
-            width: 50px;
-            background-color: rgb(0, 0, 0);
-            border: none;
-          }
-
           button:hover,
           button:focus {
             background-color: #2980b9;

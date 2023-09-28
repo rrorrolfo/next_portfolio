@@ -27,7 +27,7 @@ const DropdownMenu = () => {
 
   return (
     <>
-      <div>
+      <div style={{ border: "2px solid #fffb32" }}>
         <OverlayMenu toggleMenu={toggleMenu} showMenu={showMenu} />
         <MenuButton showMenu={showMenu} />
         <CloseButton
@@ -44,7 +44,6 @@ const DropdownMenu = () => {
           div {
             position: relative;
             display: block;
-            border: 2px solid #fffb32;
             width: 55px;
             margin-left: auto !important;
             border-radius: 4px;
