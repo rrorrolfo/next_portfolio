@@ -9,7 +9,7 @@ type Props = {
 
 const PagesList = ({ showMenu, breakpoints }: Props) => {
   return (
-    <div className="dropdown-nav">
+    <div>
       {!breakpoints.isLG && showMenu ? (
         <ul>
           {pagesItems.map((item) => (
