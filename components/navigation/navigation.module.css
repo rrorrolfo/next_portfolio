@@ -31,12 +31,6 @@
   color: rgb(255, 109, 0) !important;
 }
 
-@media (min-width: 600px) {
-  .navigationContainer a {
-    padding: 0 !important;
-  }
-}
-
 @media (min-width: 900px) {
   .mainNavContainer {
     display: initial;
