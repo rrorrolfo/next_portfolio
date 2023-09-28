@@ -44,7 +44,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   } = project;
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardHeader title={name} />
       <CardMedia component="img" height="194" image={imageURL} alt={imageAlt} />
       <CardContent>
