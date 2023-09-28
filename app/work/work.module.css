@@ -7,6 +7,7 @@
 
 .pageContainer {
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 900px) {
