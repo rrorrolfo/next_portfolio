@@ -2,6 +2,12 @@ import { LinkItem } from "./types";
 
 export const pagesItems: LinkItem[] = [
   {
+    id: "home",
+    text: "Home",
+    to: "/",
+    title: "Home",
+  },
+  {
     id: "work",
     text: "Work",
     to: "/work",

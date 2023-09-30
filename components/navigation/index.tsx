@@ -28,7 +28,7 @@ const Navigation = () => {
       </Grid>
       <Grid md={6} lg={4} className={styles.mainNavContainer}>
         <Grid container>
-          {pagesItems.map(({ id, text, to, title }) => (
+          {pagesItems.slice(1).map(({ id, text, to, title }) => (
             <Grid
               key={id}
               md={12 / pagesItems.length}
