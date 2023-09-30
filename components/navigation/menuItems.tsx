@@ -19,10 +19,4 @@ export const pagesItems: LinkItem[] = [
     to: "/about",
     title: "About",
   },
-  {
-    id: "contact",
-    text: "Contact",
-    to: "/contact",
-    title: "Contact",
-  },
 ];
