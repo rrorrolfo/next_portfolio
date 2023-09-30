@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Grid from "@mui/material/Unstable_Grid2";
 import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import LinkedinLogo from "@/components/logos/Linkedin";
+import GitHubLogo from "@/components/logos/Github";
 
 import profilePic from "./RR.jpg";
 import styles from "./about.module.css";
@@ -63,6 +66,17 @@ const About = () => {
             </span>{" "}
             technologies.
           </Typography>
+          <Container className={styles.socialMediaContainer}>
+            <a
+              href="https://www.linkedin.com/in/rodolfo-perez-0451a6b3/"
+              title="Linkedin profile."
+            >
+              <LinkedinLogo />
+            </a>
+            <a href="https://github.com/rrorrolfo" title="Github profile.">
+              <GitHubLogo />
+            </a>
+          </Container>
         </Grid>
       </Grid>
     </Grid>
