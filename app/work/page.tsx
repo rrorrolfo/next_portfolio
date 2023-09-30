@@ -8,7 +8,7 @@ const Work = () => {
   return (
     <Grid container className={styles.pageContainer}>
       <Grid xs={12}>
-        <h1 className={styles.title}>My Work</h1>
+        <h1 className="title">My Work</h1>
       </Grid>
       <Grid container spacing={4} xs={9} sm={10} lg={9}>
         {projectsData.map((project) => (
