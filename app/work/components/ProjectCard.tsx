@@ -11,6 +11,10 @@ import Collapse from "@mui/material/Collapse";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Box from "@mui/material/Box";
+
+import styles from "./card.module.css";
+
 import { Project } from "../types";
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -48,32 +52,18 @@ const ProjectCard = ({ project }: { project: Project }) => {
       <CardHeader title={name} />
       <CardMedia component="img" height="194" image={imageURL} alt={imageAlt} />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body1" color="text.secondary">
           {description}
         </Typography>
+        <Box className={styles.linksContainer}>
+          <a href={liveUrl} target="_blank">
+            Visit website
+          </a>
+          <a href={repositoryURL} target="_blank">
+            Source code
+          </a>
+        </Box>
       </CardContent>
-      <CardActions disableSpacing>
-        <Typography paragraph>Technical specifications:</Typography>
-        <ExpandMore
-          expand={expandFirstDrawer}
-          onClick={() => {
-            setExpandFirstDrawer(!expandFirstDrawer);
-          }}
-          aria-expanded={expandFirstDrawer}
-          aria-label="show technical specifications"
-        >
-          <ExpandMoreIcon />
-        </ExpandMore>
-      </CardActions>
-      <Collapse in={expandFirstDrawer} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and
-            set aside for 10 minutes.
-          </Typography>
-        </CardContent>
-      </Collapse>
-
       <CardActions disableSpacing>
         <Typography paragraph>Technologies used:</Typography>
         <ExpandMore
@@ -89,11 +79,38 @@ const ProjectCard = ({ project }: { project: Project }) => {
       </CardActions>
       <Collapse in={expandSecondDrawer} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>
-            Add rice and stir very gently to distribute. Top with artichokes and
-            peppers, and cook without stirring, until most of the liquid is
-            absorbed, 15 to 18 minut
-          </Typography>
+          <ul className={styles.specList}>
+            {technologiesUsed.map((text) => (
+              <li key={text}>
+                <Typography paragraph>{text}</Typography>
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+      </Collapse>
+
+      <CardActions disableSpacing>
+        <Typography paragraph>Technical specifications:</Typography>
+        <ExpandMore
+          expand={expandFirstDrawer}
+          onClick={() => {
+            setExpandFirstDrawer(!expandFirstDrawer);
+          }}
+          aria-expanded={expandFirstDrawer}
+          aria-label="show technical specifications"
+        >
+          <ExpandMoreIcon />
+        </ExpandMore>
+      </CardActions>
+      <Collapse in={expandFirstDrawer} timeout="auto" unmountOnExit>
+        <CardContent>
+          <ul className={styles.specList}>
+            {technicalSpecifications.map((text, index) => (
+              <li key={`spec-${index}`}>
+                <Typography paragraph>{text}</Typography>
+              </li>
+            ))}
+          </ul>
         </CardContent>
       </Collapse>
     </Card>

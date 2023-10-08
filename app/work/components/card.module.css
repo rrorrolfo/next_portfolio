@@ -1,0 +1,13 @@
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0 5px;
+}
+
+.linksContainer a {
+  text-decoration: underline;
+}
+
+.specList {
+  padding: 0 20px;
+}
