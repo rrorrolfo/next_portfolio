@@ -45,6 +45,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
     liveUrl,
     technologiesUsed,
     technicalSpecifications,
+    isPrivate,
   } = project;
 
   return (
@@ -60,7 +61,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             Visit website
           </a>
           <a href={repositoryURL} target="_blank">
-            Source code
+            Source code{isPrivate ? " (Private)" : ""}
           </a>
         </Box>
       </CardContent>
