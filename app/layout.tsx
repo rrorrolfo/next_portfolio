@@ -5,9 +5,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio Rodolfo Pérez",
+  title: "Rodolfo Pérez | React developer",
   description:
-    "Rodolfo is a react developer with experience in React.js, Redux.js Next.js, Node.js",
+    "Rodolfo is a react developer with experience within the React ecosystem (React.js, Redux.js Next.js, Node.js)",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
