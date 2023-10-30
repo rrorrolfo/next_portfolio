@@ -5,6 +5,7 @@ export type Project = {
   imageURL: string;
   imageAlt: string;
   repositoryURL: string;
+  isPrivate: boolean;
   liveUrl: string;
   technologiesUsed: string[];
   technicalSpecifications: string[];
