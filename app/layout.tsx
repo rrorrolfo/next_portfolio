@@ -1,8 +1,12 @@
 import Grid from "@mui/material/Unstable_Grid2";
-import Nav from "../components/navigation";
+import { Assistant } from "next/font/google";
 import type { Metadata } from "next";
 
+import Nav from "../components/navigation";
+
 import "./globals.css";
+
+const assistant = Assistant({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rodolfo Pérez | React developer",
@@ -13,7 +17,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
-      <body>
+      <body className={assistant.className}>
         <Grid container>
           <Grid xs={12} direction="column" className="navContainer">
             <Nav />
